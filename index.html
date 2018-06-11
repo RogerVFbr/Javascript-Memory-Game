@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.2.1.min.js" charset="utf8"></script>
+</head>
+<body>
+  <div id="titulo"><h1>Assessment<br />Javascript</h1></div>
+  <div id="container">
+    <div id="gameblocker"></div>
+    <div id="tempos"><table><caption>TOP&nbsp15&nbspTempos<br><button>X</button></caption><thead><tr><th class="pos">#</th><th class="val">Nome</th><th class="val">Tempo</th></tr></thead><tbody id="temposBody"></tbody></table></div>
+    <div id="vitoria">Parabéns, você completou o jogo! <br />Digite seu nome: <br /><input type="text" id="nomevencedor" maxLength=8 value="" autofocus><br><button onclick="app.atualizaTempos()">OK</button></div>
+    <div id="game">
+      <table>
+        <caption id="inicia">Começar novo jogo!</caption>
+        <tr><td><div id="div1"></div></td><td><div id="div2"></div></td><td><div id="div3"></div></td><td><div id="div4"></div></td></tr>
+        <tr><td><div id="div5"></div></td><td><div id="div6"></div></td><td><div id="div7"></div></td><td><div id="div8"></div></td></tr>
+        <tr><td><div id="div9"></div></td><td><div id="div10"></div></td><td><div id="div11"></div></td><td><div id="div12"></div></td></tr>
+        <tr><td><div id="div13"></div></td><td><div id="div14"></div></td><td><div id="div15"></div></td><td><div id="div16"></div></td></tr>
+      </table>
+      <div id="abretempos">Mostrar tempos</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script charset="utf8">
+        var app = { nrComponentes:0 };
+        app.getComponente = function(nome) {
+          if (!app[nome]) {
+            app[nome] = {};
+            app[app.nrComponentes++] = nome;
+          }
+          return app[nome];
+        };
+      </script>
+      <script src="js/script.js" charset="utf8"></script>
+    </div>
+</div>
+</body>
+</html>

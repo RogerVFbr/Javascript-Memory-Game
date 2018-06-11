@@ -1,0 +1,218 @@
+body {
+	background: black;
+}
+
+#titulo {
+	width: 550px;
+	padding: 0px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,.2);
+	background: rgb(0, 51, 204);
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 10px auto;
+	font-size: 80%;
+	text-align: center;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255,0.4);
+}
+
+h1 {
+	padding: 0px;
+	margin: 10px 0px;
+}
+
+#container {
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+	width: 550px;
+	height: 605px;
+	text-align: middle;
+	background: white;
+	border-radius: 10px;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0,0.5);
+    border: 1px solid rgba(100,100,100,.2);
+}
+
+#gameblocker {
+	position: absolute;
+	width: 550px;
+	height: 605px;
+	background: rgba(0,0,0,.0);
+	z-index: -1;
+}
+
+#vitoria {
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	top: 180px;
+	left: 125px;
+	width: 300px;	
+	z-index: 21;
+	background: rgb(0, 51, 204);
+	border-radius: 5px;
+    box-shadow: 0px 0px 250px rgba(255, 255, 255,1);
+	padding: 40px 0px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,.2);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 110%;
+	color: white;
+}
+
+input {
+	margin: 10px 0px;
+}
+
+button {
+	padding: 3px 50px;
+}
+
+#tempos {
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	top: 80px;
+	left: 125px;
+	width: 280px;	
+	height: 410px;
+	z-index: 20;
+	background: rgb(0, 51, 204);
+	border-radius: 5px;
+    box-shadow: 0px 0px 250px rgba(255, 255, 255,1);
+    /*background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */*/
+    /*box-shadow: inset 0 0 150px rgb(0, 51, 204), 0px 0px 250px rgba(255, 255, 255,1);*/
+	padding: 0px;
+	border-radius: 10px;
+	border: 4px solid rgba(255,255,255,.2);
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,4695d6+50,207cca+100,7db9e8+100,207cca+101 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #1e5799 0%, #4695d6 50%, #207cca 100%, #7db9e8 100%, #207cca 101%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#4695d6 50%,#207cca 100%,#7db9e8 100%,#207cca 101%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #1e5799 0%,#4695d6 50%,#207cca 100%,#7db9e8 100%,#207cca 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
+}
+
+#tempos table {
+	width: 250px;	
+}
+
+#tempos caption {
+	padding: 7px 50px 5px 70px;
+	border-radius: 5px;
+	/*background: rgb(0, 51, 204);*/
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 15px 0px 0px 0px;
+	font-size: 110%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255,0.4);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0026ff+0,1e6399+50,0026ff+101 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002699+0,0033cc+53,002699+101 */
+	background: #002699; /* Old browsers */
+	background: -moz-linear-gradient(top,  #002699 0%, #0033cc 53%, #002699 101%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #002699 0%,#0033cc 53%,#002699 101%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #002699 0%,#0033cc 53%,#002699 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002699', endColorstr='#002699',GradientType=0 ); /* IE6-9 */
+
+
+
+
+}
+
+#tempos th {
+	padding: 3px 0px;
+	border-radius: 5px;
+	background: rgba(0, 51, 204,.7);
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 0px 0px 0px 0px;
+	font-size: 80%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255,0.4);
+}
+
+#tempos td {
+	overflow: hidden;
+	background-image: none;
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+.pos {
+	width: 14%;
+}
+
+.val {
+	width: 43%;
+}
+
+#tempos button {
+	position: absolute;
+	top: 24px;
+	left: 240px;
+	padding: 0px 5px;
+	font-size: 50%;
+	border-radius: 5px;
+}
+
+#abretempos {
+	padding: 7px 70px 5px 70px;
+	border-radius: 10px;
+	background: rgb(0, 51, 204);
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 6px auto 0px auto;
+	font-size: 82%;
+	width: 395px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255,0.4);
+    text-align: center;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	background-image: url("../img/cross.png");
+	height: 128px;
+	width: 128px;
+}
+
+#tempos tr:hover {
+	background-color: rgba(255,255,255,.05);
+}
+
+caption {
+	padding: 5px;
+	border-radius: 10px;
+	background: rgb(0, 51, 204);
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 5px 0px 5px 0px;
+	font-size: 80%;
+}
+
+caption:hover, #abretempos:hover {
+	background: rgb(0, 51, 255);
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6,
+#div7, #div8, #div9, #div10, #div11, #div12, #div13,
+#div14, #div15, #div16 {
+	height: 128px;
+	width: 128px;
+	background: white;
+	display: none;
+}
+
+img {
+	height: 128px;
+	width: 128px;
+}
